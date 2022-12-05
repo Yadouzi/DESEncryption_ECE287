@@ -18,7 +18,7 @@ The purpose of this project is to use the DE2-115 board to encrypt any 16 charac
 
 
 # Conclusion
-This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. FSM is utilized 
+This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. FSM is utilized for 
 
 # Work Cited
 Simplilearn. (2022, November 18). What is DES (data encryption standard)? DES algorithm and operation [updated]. Simplilearn.com. Retrieved October 28, 2022, from https://www.simplilearn.com/what-is-des-article

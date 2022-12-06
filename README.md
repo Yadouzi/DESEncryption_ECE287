@@ -25,7 +25,7 @@ This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdec
 
 ![keyboard](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/90E2C87E-46A5-4513-BB24-8D45E0644DD9.jpeg)
 ![data](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/8C3A09E2-A0E6-43C5-886E-B25E34DD9EA3.jpeg)
-
+![encrypted](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/CE7B11B5-C53D-4BC9-9FE4-083282F1F910.jpeg)
 
 # Work Cited
 Simplilearn. (2022, November 18). What is DES (data encryption standard)? DES algorithm and operation [updated]. Simplilearn.com. Retrieved October 28, 2022, from https://www.simplilearn.com/what-is-des-article

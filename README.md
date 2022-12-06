@@ -23,7 +23,7 @@ This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdec
 
 # Results
 
-![alt text](http://url/to/img.png)
+![keyboard](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/90E2C87E-46A5-4513-BB24-8D45E0644DD9.jpeg)
 
 
 

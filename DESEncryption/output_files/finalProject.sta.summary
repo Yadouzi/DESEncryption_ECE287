@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -53.439
+TNS   : -1478.826
+
+Type  : Slow 1200mV 85C Model Setup 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : -2.199
+TNS   : -41.631
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
+Slack : -5.282
+TNS   : -229.241
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
+Slack : 3.471
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -308.830
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : -1.285
+TNS   : -28.270
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -49.219
+TNS   : -1337.278
+
+Type  : Slow 1200mV 0C Model Setup 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : -1.944
+TNS   : -36.342
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -4.708
+TNS   : -204.219
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 3.164
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -308.830
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : -1.285
+TNS   : -28.270
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -26.410
+TNS   : -612.842
+
+Type  : Fast 1200mV 0C Model Setup 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : -0.546
+TNS   : -9.497
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : -2.142
+TNS   : -86.920
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 1.635
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -256.201
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inputControl:dataIn|ps2Keyboard:keyInput|mouse_Inner_controller:innerMouse|Altera_UP_PS2_Data_In:PS2_Data_In|received_data_en[0]'
+Slack : -1.000
+TNS   : -22.000
+
+------------------------------------------------------------

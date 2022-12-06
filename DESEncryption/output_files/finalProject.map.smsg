@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at ps2Keyboard.v(26): always construct contains both blocking and non-blocking assignments File: M:/finalProject/ps2Keyboard.v Line: 26
+Warning (10273): Verilog HDL warning at LCD_Display.v(117): extended using "x" or "z" File: M:/finalProject/LCD_Display.v Line: 117
+Info (10281): Verilog HDL Declaration information at dataInput.v(18): object "delete" differs only in case from object "DELETE" in the same scope File: M:/finalProject/dataInput.v Line: 18

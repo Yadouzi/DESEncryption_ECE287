@@ -12,9 +12,12 @@ The purpose of this project is to use the DE2-115 board to encrypt any 16 charac
 
 
 # Problems & Solutions
--Originally we wanted to use 8 ASCII instead of hexdecimal, but then found out it will make the input control harder and more complicated than using hexdecimal. Besides that, we need to create a separate module to convert ASCII into hexdecimal. Hence, use hexdecimal is more efficient.
 
--The concatonation operator {} should have the most significant bit on the left and the least significant bit on the right. However,when we did it, data inserted oppositely. We then manually reverse the data.
+  - Originally we wanted to use ASCII instead of hexdecimal, but then found out it will make the inputControl harder and more complicated than using hexdecimal.        Because DES encryption works with 64 bits denoted as "blocks" (this project is working with just 1 block) of data at a time we could further extend on this project to accept all ASCII characters and parse the input into the necessary blocks. Using hexadecimal as means of data input works fine for this project.
+
+  - The concatonation operator {} should have the most significant bit on the left and the least significant bit on the right. When we went to use the tables [here](https://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm) they start with the LSB and index at 0. We had to write a simple python script to mirror the tables to start with the MSB so the {} operator would function correctly.
+
+  - In subKey.v the generation of the subkeys does not match the PC-1 and PC-2 tables because of the conversion between bus sizes. (ie. You must subtract the values in the PC-1(64 bit bus => 56 bit bus)(assuming the table index's at 0) table from 63 to get the respective 56 bit compression table. The same is true for PC-2.
 
 
 # Conclusion
@@ -33,6 +36,8 @@ https://user-images.githubusercontent.com/26750211/206052698-0069672b-5c3f-4e43-
 ![encrypted](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/CE7B11B5-C53D-4BC9-9FE4-083282F1F910.jpeg)
 ![decrypt](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/018FD2D3-563B-49D3-80A7-05B9F7265807.jpeg)
 ![done](https://github.com/Yadouzi/DESEncryption_ECE287/blob/main/images/393CCF37-ADD0-453E-A9DB-014CDE445011.jpeg)
+
+
 # Work Cited
 Simplilearn. (2022, November 18). What is DES (data encryption standard)? DES algorithm and operation [updated]. Simplilearn.com. Retrieved October 28, 2022, from https://www.simplilearn.com/what-is-des-article
 

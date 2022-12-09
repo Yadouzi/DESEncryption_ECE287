@@ -2,7 +2,7 @@
 Authors: Blake Rile & Mina Yang
 
 # Background
-Encryption is highly demanded nowadays due to safety, security and various other reasons. The DES algorithm has already been widely used in the world to help people protect information and transfer information.
+Encryption is a process of converting information into codes to prevent unauthorized access. This technic is highly demanded nowadays due to safety, security and various other reasons. The DES algorithm is one of the choices of doing encryption. And for sure it has already been widely used in the world to help people protect information and transfer information.
 "The DES (Data Encryption Standard) algorithm is a symmetric-key block cipher created in the early 1970s by an IBM team and adopted by the National Institute of Standards and Technology (NIST). The algorithm takes the plain text in 64-bit blocks and converts them into ciphertext using 48-bit keys(Simplilearn, 2022)".
 "The combination of substitutions and permutations is called a product cipher.(Liu et al., 2013)".
 

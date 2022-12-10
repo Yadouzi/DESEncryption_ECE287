@@ -2,13 +2,13 @@
 Authors: Blake Rile & Mina Yang
 
 # Background
-Encryption is a process of converting information into codes to prevent unauthorized access. This technic is highly demanded nowadays due to safety, security and various other reasons. The DES algorithm is one of the choices of doing encryption. And for sure it has already been widely used in the world to help people protect information and transfer information.
+Encryption is a process of converting information into code to prevent unauthorized access. This technic is highly demanded nowadays due to safety, security and other concerns. The DES algorithm is one of the choices of doing encryption. And for sure it has already been widely used in the world to help people protect information and transfer information.
 "The DES (Data Encryption Standard) algorithm is a symmetric-key block cipher created in the early 1970s by an IBM team and adopted by the National Institute of Standards and Technology (NIST). The algorithm takes the plain text in 64-bit blocks and converts them into ciphertext using 48-bit keys(Simplilearn, 2022)".
 "The combination of substitutions and permutations is called a product cipher.(Liu et al., 2013)".
 
 
 # Description of design
-The purpose of this project is to use the DE2-115 board to encrypt any 16 character hexdecimal data users put in. Users can use a PS2 keyboard to enter numbers 0 through 9 and letters a through f. The numbers and letters entered by users will show up on the LCD display on the DE2 board. There are two lines of 16 character hexdecimal data for users to put in. The first line is for the data users want to protect. The second line is for the keys utilized to help encrypt data. The encrypted/decrypted version will also be displayed on LCD screen after all inputs are done. FSM(finite state machine) is also created to control inputs.
+The purpose of this project is to use the DE2-115 board to encrypt any 16 character hexdecimal data users put in. Users can use a PS2 keyboard to enter numbers 0 through 9 and letters a through f. The numbers and letters entered by users will show up on the LCD display on the DE2 board. There are two lines of 16 character hexdecimal data for users to put in. The first line is for the data users want to protect. The second line is for the keys utilized to help encrypt data. The encrypted/decrypted version will also be displayed on LCD screen after all inputs are done. FSM(finite state machine) is created to control inputs. 16 character hexdecimal is the maximum numbers of character for each line. Any input after the 16th input will not be recorded. You can delete one character or the whole line by cliking "backspace" or "delete" on the keyboard. However, once you 
 
 # Results
 ## Video
@@ -43,7 +43,7 @@ https://user-images.githubusercontent.com/26750211/206052698-0069672b-5c3f-4e43-
   
 
 # Conclusion
-This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. FSM is utilized for 
+This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. FSM is utilized for controlling input.
 
 
 # Work Cited - All code is "highlighted" on what was used

@@ -43,8 +43,7 @@ https://user-images.githubusercontent.com/26750211/206052698-0069672b-5c3f-4e43-
   
 
 # Conclusion
-This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. FSM is utilized for controlling input.
-
+This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. In this report, concepts about DES encryption, design for DES encryption and process of using this design are discussed and presented.
 
 # Work Cited - All code is "highlighted" on what was used
 

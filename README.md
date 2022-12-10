@@ -8,7 +8,7 @@ Encryption is a process of converting information into code to prevent unauthori
 
 
 # Description of design
-The purpose of this project is to use the DE2-115 board to encrypt any 16 character hexdecimal data users put in. FSM(finite state machine) is created in this project to control inputs, since fsm can be used to control executive flow - each input will be associated to specific transition and state. There are two lines of 16 character hexdecimal data for users to put in. The first line is for the data users want to protect. The second line is for the keys utilized to help encrypt data. 16 character hexdecimal is the maximum number of characters for each line. Any input after the 16th input will not be recorded. You can delete one character or the whole line by clicking "backspace" or "delete" on the keyboard. However, once you press "enter," you will no longer be able to change anything in that line. Reset switch is used to start over. Encrypt/Decrypt switch is used to implement the action of converting between 16 character hexdecimal and encrypted data. Users can use a PS2 keyboard to enter numbers 0 through 9 and letters a through f. The numbers and letters entered by users will be presented on the LCD display on the DE2 board. The encrypted/decrypted version will also be displayed on LCD screen after all inputs are done.
+The purpose of this project is to use the DE2-115 board to encrypt any 16 character hexadecimal data users put in. FSM(finite state machine) is created in this project to control inputs, since fsm can be used to control executive flow - each input will be associated to specific transition and state. There are two lines of 16 character hexadecimal data for users to put in. The first line is for the data users want to protect. The second line is for the keys utilized to help encrypt data. 16 character hexadecimal is the maximum number of characters for each line. Any input after the 16th input will not be recorded. You can delete one character or the whole line by clicking "backspace" or "delete" on the keyboard. However, once you press "enter," you will no longer be able to change anything in that line. Reset switch is used to start over. Encrypt/Decrypt switch is used to implement the action of converting between 16 character hexdecimal and encrypted data. Users can use a PS2 keyboard to enter numbers 0 through 9 and letters a through f. The numbers and letters entered by users will be presented on the LCD display on the DE2 board. The encrypted/decrypted version will also be displayed on LCD screen after all inputs are done.
 
 # Results
 ## Video
@@ -31,19 +31,19 @@ https://user-images.githubusercontent.com/26750211/206052698-0069672b-5c3f-4e43-
 
 # Problems & Solutions
 
-  - Originally we wanted to use ASCII instead of hexdecimal, but then found out it will make the inputControl harder and more complicated than using hexdecimal.        Because DES encryption works with 64 bits denoted as "blocks" (this project is working with just 1 block) of data at a time we could further extend on this project to accept all ASCII characters and parse the input into the necessary blocks. Using hexadecimal as means of data input works fine for this project.
+  - Originally we wanted to use ASCII instead of hexadecimal, but then found out it would make the input control harder and more complicated than using hexdecimal.        Because DES encryption works with 64 bits denoted as "blocks" (this project is working with just 1 block) of data at a time we could further extend on this project to accept all ASCII characters and parse the input into the necessary blocks. Using hexadecimal as means of data input works fine for this project.
 
   - The concatonation operator {} should have the most significant bit on the left and the least significant bit on the right. When we went to use the tables [here](https://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm) they start with the LSB and index at 0. We had to write a simple python script to mirror the tables to start with the MSB so the {} operator would function correctly.
 
   - In subKey.v the generation of the subkeys does not match the PC-1 and PC-2 tables because of the conversion between bus sizes. (ie. You must subtract the values in the PC-1(64 bit bus => 56 bit bus)(assuming the table index's at 0) table from 63 to get the respective 56 bit compression table. The same is true for PC-2.
 
   - The FSM inside inputControl.v has a few key protections against user input:
-    - When there is no characters deplayed on the "data" line (or the "key" line) the FSM prevents the backspace from being registed.
+    - When there is no characters deplayed on the "data" line (or the "key" line) the FSM prevents the backspace from being registered.
     - Prevents more that 16 hex characters from being input (a full 64 bit buffer).
   
 
 # Conclusion
-This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexdecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. In this report, concepts about DES encryption, design for DES encryption and process of using this design are discussed and presented.
+This project utilized DE2-115 to allow users encrypt/decrypt 16 character hexadecimal data. We asked users to enter key so that they can choose whichever key features they would like. Hardcode for the key in the design part will then not be required. In this report, concepts about DES encryption, design for DES encryption and process of using this design are discussed and presented.
 
 # Work Cited - All code is "highlighted" on what was used
 
